@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Press | Solenne Escapes</title>
+    <meta name="description" content="Press mentions, publications, and media contact information." />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+  <body>
+    <div id="site-header"></div>
+
+    <main>
+      <section class="hero-mini">
+        <span class="badge">Press</span>
+        <h1>Media features and publications</h1>
+        <p>Showcase press mentions and manage external links directly from CMS.</p>
+      </section>
+
+      <section>
+        <div class="container grid grid-2" style="margin-bottom: 26px;">
+          <article class="form-card">
+            <h3>Media Contact</h3>
+            <p style="margin-top: 8px;">
+              For press requests, interviews, and high-resolution media kits, contact
+              <a href="mailto:press@solenneescapes.com">press@solenneescapes.com</a>.
+            </p>
+          </article>
+          <article class="newsletter">
+            <h3>Press updates</h3>
+            <p>Get notified when new features, awards, or interviews are published.</p>
+            <form data-newsletter>
+              <input type="email" placeholder="Your email" required />
+              <button class="button" type="submit">Subscribe</button>
+            </form>
+          </article>
+        </div>
+
+        <div class="container">
+          <div id="press-grid" class="grid grid-3"></div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="insta-grid" data-instagram-feed></div>
+        </div>
+      </section>
+    </main>
+
+    <div id="site-footer"></div>
+
+    <div class="cookie-banner" id="cookie-banner">
+      <p>We use cookies to improve browsing, analyze traffic, and personalize content.</p>
+      <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+        <button class="button button-outline" id="cookie-reject" type="button">Decline</button>
+        <button class="button button-primary" id="cookie-accept" type="button">Accept</button>
+      </div>
+    </div>
+
+    <script src="../assets/data/site-data.js"></script>
+    <script src="../assets/js/layout.js"></script>
+    <script src="../assets/js/common.js"></script>
+    <script src="../assets/js/press.js"></script>
+  </body>
+</html>

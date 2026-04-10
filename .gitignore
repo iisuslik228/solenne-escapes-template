@@ -1,0 +1,35 @@
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editors / IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Dependency / build output
+node_modules/
+dist/
+build/
+.cache/
+.parcel-cache/
+.next/
+coverage/
+
+# Python cache (for local static server workflows)
+__pycache__/
+*.pyc

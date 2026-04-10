@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Article | Solenne Escapes</title>
+    <meta name="description" content="Article details with media, quote blocks, and related posts." />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+  <body>
+    <div id="site-header"></div>
+
+    <main>
+      <section class="hero-mini">
+        <span class="badge">Blog Article</span>
+        <h1 id="post-title"></h1>
+        <p id="post-meta"></p>
+      </section>
+
+      <section style="padding-top: 0;">
+        <div class="container split">
+          <article class="form-card" style="padding: 0; overflow: hidden;">
+            <div class="card-media" style="aspect-ratio: 16 / 8;"><img id="post-cover" src="" alt="Post cover" /></div>
+            <div style="padding: 22px;">
+              <div id="post-content"></div>
+              <blockquote
+                style="margin: 20px 0 0; padding: 16px; border-left: 3px solid var(--color-accent); background: var(--color-surface-soft); border-radius: 12px;">
+                <p id="post-quote"></p>
+              </blockquote>
+            </div>
+          </article>
+
+          <aside class="form-card" style="height: fit-content; position: sticky; top: 96px;">
+            <h3 style="margin-bottom: 10px;">Share this article</h3>
+            <div class="meta">
+              <span><a href="#">Facebook</a></span>
+              <span><a href="#">X/Twitter</a></span>
+              <span><a href="#">LinkedIn</a></span>
+              <span><a href="#">Pinterest</a></span>
+            </div>
+            <hr style="border: 0; border-top: 1px solid var(--color-border); margin: 18px 0;" />
+            <h3 style="margin-bottom: 8px;">Newsletter</h3>
+            <form data-newsletter style="display: grid; gap: 10px;">
+              <input type="email" placeholder="Your email" required />
+              <button class="button button-primary" type="submit">Subscribe</button>
+            </form>
+          </aside>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <span class="badge">Related</span>
+              <h2>More Articles</h2>
+            </div>
+            <a class="button button-outline" href="./blog.html">Back to Blog</a>
+          </div>
+          <div class="grid grid-2" id="related-posts"></div>
+        </div>
+      </section>
+    </main>
+
+    <div id="site-footer"></div>
+
+    <div class="cookie-banner" id="cookie-banner">
+      <p>We use cookies to improve browsing, analyze traffic, and personalize content.</p>
+      <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+        <button class="button button-outline" id="cookie-reject" type="button">Decline</button>
+        <button class="button button-primary" id="cookie-accept" type="button">Accept</button>
+      </div>
+    </div>
+
+    <script src="../assets/data/site-data.js"></script>
+    <script src="../assets/js/layout.js"></script>
+    <script src="../assets/js/common.js"></script>
+    <script src="../assets/js/blog-post.js"></script>
+  </body>
+</html>

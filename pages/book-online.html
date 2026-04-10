@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Online | Solenne Escapes</title>
+    <meta name="description" content="Browse available homes and start your booking request online." />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+  <body>
+    <div id="site-header"></div>
+
+    <main>
+      <section class="hero-mini">
+        <span class="badge">Book Online</span>
+        <h1>Check availability and submit your request</h1>
+        <p>Select dates and guest count. Full real-time inventory can be connected to your booking engine or PMS API.</p>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="form-card">
+            <div class="filters">
+              <div class="field">
+                <label for="book-checkin">Check-in</label>
+                <input id="book-checkin" type="date" />
+              </div>
+              <div class="field">
+                <label for="book-checkout">Check-out</label>
+                <input id="book-checkout" type="date" />
+              </div>
+              <div class="field">
+                <label for="book-guests">Guests</label>
+                <input id="book-guests" type="number" min="1" max="20" placeholder="e.g. 6" />
+              </div>
+              <div class="field" style="display: flex; align-items: end;">
+                <button class="button button-primary" id="book-filter" type="button">Search Homes</button>
+              </div>
+            </div>
+            <p id="book-summary" style="margin-top: 8px;"></p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div id="book-houses" class="grid grid-3"></div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container newsletter">
+          <h3>Want a custom shortlist?</h3>
+          <p>Share your trip details and we will suggest the best available villas.</p>
+          <form data-newsletter>
+            <input type="email" placeholder="Your email" required />
+            <button class="button" type="submit">Request shortlist</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <div id="site-footer"></div>
+
+    <div class="cookie-banner" id="cookie-banner">
+      <p>We use cookies to improve browsing, analyze traffic, and personalize content.</p>
+      <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+        <button class="button button-outline" id="cookie-reject" type="button">Decline</button>
+        <button class="button button-primary" id="cookie-accept" type="button">Accept</button>
+      </div>
+    </div>
+
+    <script src="../assets/data/site-data.js"></script>
+    <script src="../assets/js/layout.js"></script>
+    <script src="../assets/js/common.js"></script>
+    <script src="../assets/js/book-online.js"></script>
+  </body>
+</html>

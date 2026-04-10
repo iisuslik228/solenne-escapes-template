@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Solenne Escapes</title>
+    <meta name="description" content="Contact form for guest inquiries and property-specific requests." />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+  <body>
+    <div id="site-header"></div>
+
+    <main>
+      <section class="hero-mini">
+        <span class="badge">Contact</span>
+        <h1>Tell us about your next stay</h1>
+        <p>Our booking and concierge team responds to all inquiries within one business day.</p>
+      </section>
+
+      <section>
+        <div class="container split">
+          <article class="form-card">
+            <h3 style="margin-bottom: 12px;">Contact Details</h3>
+            <div class="grid" style="gap: 8px;">
+              <p><strong>Phone:</strong> <span id="contact-phone"></span></p>
+              <p>
+                <strong>Email:</strong>
+                <a id="contact-email" href="mailto:stay@solenneescapes.com">stay@solenneescapes.com</a>
+              </p>
+              <p><strong>Address:</strong> <span id="contact-address"></span></p>
+            </div>
+
+            <div class="map-shell" style="margin-top: 16px;">
+              <iframe id="contact-map" src="" title="Contact map" loading="lazy"></iframe>
+            </div>
+
+            <div class="meta" style="margin-top: 14px;">
+              <span><a href="https://www.instagram.com/" target="_blank" rel="noreferrer">Instagram</a></span>
+              <span><a href="https://www.facebook.com/" target="_blank" rel="noreferrer">Facebook</a></span>
+              <span><a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a></span>
+            </div>
+          </article>
+
+          <article class="form-card">
+            <h3 style="margin-bottom: 12px;">Send an inquiry</h3>
+            <form data-mock-submit>
+              <div class="form-grid">
+                <div class="field">
+                  <label for="contact-name">Name</label>
+                  <input id="contact-name" type="text" required />
+                </div>
+                <div class="field">
+                  <label for="contact-email-form">Email</label>
+                  <input id="contact-email-form" type="email" required />
+                </div>
+                <div class="field">
+                  <label for="contact-phone-form">Phone</label>
+                  <input id="contact-phone-form" type="tel" required />
+                </div>
+                <div class="field">
+                  <label for="contact-source">How did you hear about us?</label>
+                  <select id="contact-source" data-lead-source required></select>
+                </div>
+                <div class="field full">
+                  <label for="contact-house">Interested house</label>
+                  <select id="contact-house"></select>
+                </div>
+                <div class="field full">
+                  <label for="contact-message">Message</label>
+                  <textarea id="contact-message" required></textarea>
+                </div>
+                <label class="field full" style="display: flex; gap: 10px; align-items: flex-start;">
+                  <input type="checkbox" required style="width: 18px; margin-top: 4px;" />
+                  <span>I agree to personal data processing in accordance with the Privacy Policy.</span>
+                </label>
+              </div>
+              <button class="button button-primary" type="submit" style="margin-top: 14px; width: 100%;">Send Message</button>
+              <p data-form-result style="margin-top: 10px;"></p>
+            </form>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <div id="site-footer"></div>
+
+    <div class="cookie-banner" id="cookie-banner">
+      <p>We use cookies to improve browsing, analyze traffic, and personalize content.</p>
+      <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+        <button class="button button-outline" id="cookie-reject" type="button">Decline</button>
+        <button class="button button-primary" id="cookie-accept" type="button">Accept</button>
+      </div>
+    </div>
+
+    <script src="../assets/data/site-data.js"></script>
+    <script src="../assets/js/layout.js"></script>
+    <script src="../assets/js/common.js"></script>
+    <script src="../assets/js/contact.js"></script>
+  </body>
+</html>

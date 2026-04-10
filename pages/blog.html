@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog | Solenne Escapes</title>
+    <meta name="description" content="Travel notes, concierge insights, and hospitality stories." />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+  <body>
+    <div id="site-header"></div>
+
+    <main>
+      <section class="hero-mini">
+        <span class="badge">Blog</span>
+        <h1>Stories behind each destination</h1>
+        <p>Publish news, travel tips, interviews, and updates from your team directly from CMS.</p>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="field" style="max-width: 300px; margin-bottom: 20px;">
+            <label for="blog-category">Filter by category</label>
+            <select id="blog-category"></select>
+          </div>
+
+          <div id="blog-grid" class="grid grid-3"></div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container newsletter">
+          <h3>Receive new articles in your inbox</h3>
+          <p>Monthly digest with destination guides, concierge picks, and travel inspiration.</p>
+          <form data-newsletter>
+            <input type="email" placeholder="Your email" required />
+            <button class="button" type="submit">Subscribe</button>
+          </form>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="insta-grid" data-instagram-feed></div>
+        </div>
+      </section>
+    </main>
+
+    <div id="site-footer"></div>
+
+    <div class="cookie-banner" id="cookie-banner">
+      <p>We use cookies to improve browsing, analyze traffic, and personalize content.</p>
+      <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+        <button class="button button-outline" id="cookie-reject" type="button">Decline</button>
+        <button class="button button-primary" id="cookie-accept" type="button">Accept</button>
+      </div>
+    </div>
+
+    <script src="../assets/data/site-data.js"></script>
+    <script src="../assets/js/layout.js"></script>
+    <script src="../assets/js/common.js"></script>
+    <script src="../assets/js/blog.js"></script>
+  </body>
+</html>

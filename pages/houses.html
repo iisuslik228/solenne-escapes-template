@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Houses | Solenne Escapes</title>
+    <meta name="description" content="Browse luxury holiday homes with filters by location, bedrooms, price, and availability." />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+  <body>
+    <div id="site-header"></div>
+
+    <main>
+      <section class="hero-mini">
+        <span class="badge">Our Houses</span>
+        <h1>Find the home that fits your stay style.</h1>
+        <p>Every property profile is CMS-managed and can be updated without code changes.</p>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="form-card" style="margin-bottom: 24px;">
+            <div class="filters">
+              <div class="field">
+                <label for="filter-location">Location</label>
+                <select id="filter-location"></select>
+              </div>
+              <div class="field">
+                <label for="filter-bedrooms">Bedrooms (min)</label>
+                <select id="filter-bedrooms">
+                  <option value="">Any</option>
+                  <option value="2">2+</option>
+                  <option value="3">3+</option>
+                  <option value="4">4+</option>
+                  <option value="5">5+</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="filter-price">Price per night (max)</label>
+                <select id="filter-price">
+                  <option value="">Any</option>
+                  <option value="1000">Up to 1,000</option>
+                  <option value="1300">Up to 1,300</option>
+                  <option value="1600">Up to 1,600</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="filter-availability">Availability</label>
+                <select id="filter-availability">
+                  <option value="">Any</option>
+                  <option value="Available">Available</option>
+                  <option value="Limited availability">Limited availability</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="field" style="max-width: 280px;">
+              <label for="filter-sort">Sort by</label>
+              <select id="filter-sort">
+                <option value="">Featured</option>
+                <option value="price-asc">Price: Low to High</option>
+                <option value="price-desc">Price: High to Low</option>
+                <option value="bedrooms-desc">Bedrooms: Most</option>
+              </select>
+            </div>
+          </div>
+
+          <div id="houses-grid" class="grid grid-3"></div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container newsletter">
+          <h3>Need help choosing a house?</h3>
+          <p>Tell us your dates and trip style, and our team will recommend the best options.</p>
+          <form data-newsletter>
+            <input type="email" placeholder="Your email" required />
+            <button class="button" type="submit">Get recommendations</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <div id="site-footer"></div>
+
+    <div class="cookie-banner" id="cookie-banner">
+      <p>We use cookies to improve browsing, analyze traffic, and personalize content.</p>
+      <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+        <button class="button button-outline" id="cookie-reject" type="button">Decline</button>
+        <button class="button button-primary" id="cookie-accept" type="button">Accept</button>
+      </div>
+    </div>
+
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+      <button type="button">✕</button>
+      <img src="" alt="" />
+    </div>
+
+    <script src="../assets/data/site-data.js"></script>
+    <script src="../assets/js/layout.js"></script>
+    <script src="../assets/js/common.js"></script>
+    <script src="../assets/js/houses.js"></script>
+  </body>
+</html>

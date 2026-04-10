@@ -1,0 +1,74 @@
+site:
+  brand: "Solenne Escapes"
+  tagline: "Curated villas for Mediterranean slow living"
+  contact:
+    phone: "+44 20 7946 1234"
+    email: "stay@example.com"
+    address: "Address"
+
+houses:
+  - title: "House Name"
+    slug: "unique-house-slug"
+    location:
+      country: "Country"
+      region: "Region"
+      city: "City"
+      address: "Street address"
+    coordinates:
+      lat: 0.0
+      lng: 0.0
+    max_guests: 8
+    bedrooms: 4
+    bathrooms: 3
+    has_pool: true
+    price_from: 1000
+    currency: "EUR"
+    availability_status: "Available"
+    short_description: "Short summary"
+    long_description: "Extended description"
+    amenities:
+      - "Wi-Fi"
+      - "Air conditioning"
+    images:
+      hero:
+        - "/uploads/house_hero_1.jpg"
+      gallery:
+        - "/uploads/house_gallery_1.jpg"
+    floorplans:
+      - "/uploads/house_floorplan_1.png"
+    video_url: "https://www.youtube.com/embed/..."
+    overview:
+      - "Highlight one"
+      - "Highlight two"
+    more_details:
+      - title: "House rules"
+        description: "Details"
+    things_to_do:
+      - title: "Activity"
+        description: "Description"
+    concierge_services:
+      - category: "Chef"
+        items:
+          - name: "Private chef"
+            details: "Details"
+    general_information: "General notes"
+    booking_email: "bookings@example.com"
+
+blog_posts:
+  - slug: "post-slug"
+    title: "Post title"
+    date: "2026-01-01"
+    category: "Travel"
+    excerpt: "Short text"
+    cover: "/uploads/blog_cover.jpg"
+    content:
+      - "Paragraph"
+    quote: "Quote"
+
+press_items:
+  - title: "Press title"
+    date: "2026-01-01"
+    source: "Publication"
+    excerpt: "Short text"
+    image: "/uploads/press.jpg"
+    url: "https://external-article-url"

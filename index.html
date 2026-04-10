@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solenne Escapes | Luxury Holiday Homes</title>
+    <meta
+      name="description"
+      content="Luxury holiday homes with concierge services, curated destinations, and seamless booking experiences."
+    />
+    <meta property="og:title" content="Solenne Escapes" />
+    <meta property="og:description" content="Luxury holiday homes and concierge stays." />
+    <meta property="og:type" content="website" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Solenne Escapes",
+        "url": "https://example.com",
+        "email": "stay@solenneescapes.com",
+        "telephone": "+44 20 7946 1234"
+      }
+    </script>
+  </head>
+  <body>
+    <div id="site-header"></div>
+
+    <main>
+      <section class="hero">
+        <div id="home-hero" class="hero-frame reveal">
+          <div class="hero-overlay"></div>
+          <div class="hero-content">
+            <span class="badge">Curated Mediterranean Villas</span>
+            <h1>Stay somewhere you remember for years.</h1>
+            <p>
+              Boutique portfolio of design-led homes for short-term stays, celebration trips, family gatherings, and restorative escapes.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="./pages/houses.html">Our Holiday Homes</a>
+              <a class="button button-light" href="./pages/book-online.html">Check Availability</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container grid grid-2">
+          <article class="card reveal" style="padding: 24px;">
+            <span class="badge">About Us</span>
+            <h2>Hospitality built around design, privacy, and local culture.</h2>
+            <p>
+              We curate private homes where architecture, service, and destination rhythm come together. Every stay includes dedicated support,
+              tailored experiences, and guest communication that feels personal from first inquiry to departure.
+            </p>
+          </article>
+
+          <article class="newsletter reveal">
+            <h3>Get seasonal travel updates</h3>
+            <p>Exclusive house openings, destination stories, and curated itineraries sent monthly.</p>
+            <form data-newsletter>
+              <input type="email" name="email" placeholder="Enter your email" required />
+              <button class="button" type="submit">Subscribe</button>
+            </form>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <span class="badge">Our Houses</span>
+              <h2>Featured Villas</h2>
+            </div>
+            <a class="button button-outline" href="./pages/houses.html">See All Homes</a>
+          </div>
+          <div id="featured-houses" class="grid grid-3"></div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <span class="badge">Destinations</span>
+              <h2>From iconic coastlines to hidden villages</h2>
+            </div>
+          </div>
+          <div id="destination-preview" class="grid grid-3"></div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <span class="badge">Instagram</span>
+              <h2>Inside the lifestyle</h2>
+            </div>
+          </div>
+          <div class="insta-grid" data-instagram-feed></div>
+        </div>
+      </section>
+    </main>
+
+    <div id="site-footer"></div>
+
+    <div class="modal" id="subscribe-modal" aria-hidden="true">
+      <div class="modal-card">
+        <button class="modal-close" type="button" data-modal-close>✕</button>
+        <span class="badge">Newsletter</span>
+        <h3 style="margin: 10px 0 8px;">Unlock private travel notes</h3>
+        <p>Join our list for property openings, off-market villas, and concierge travel briefs.</p>
+        <form data-newsletter style="margin-top: 16px; display: grid; gap: 10px;">
+          <input type="email" placeholder="Your email" required />
+          <button class="button button-primary" type="submit">Join now</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="cookie-banner" id="cookie-banner">
+      <p>We use cookies to improve browsing, analyze traffic, and personalize content.</p>
+      <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+        <button class="button button-outline" id="cookie-reject" type="button">Decline</button>
+        <button class="button button-primary" id="cookie-accept" type="button">Accept</button>
+      </div>
+    </div>
+
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+      <button type="button">✕</button>
+      <img src="" alt="" />
+    </div>
+
+    <script src="./assets/data/site-data.js"></script>
+    <script src="./assets/js/layout.js"></script>
+    <script src="./assets/js/common.js"></script>
+    <script src="./assets/js/home.js"></script>
+  </body>
+</html>

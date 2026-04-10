@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>House Details | Solenne Escapes</title>
+    <meta name="description" content="Detailed house page with gallery, amenities, booking form, map, and concierge information." />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+  <body>
+    <div id="site-header"></div>
+
+    <main>
+      <section class="hero-mini">
+        <span class="badge">House Details</span>
+        <h1 id="house-title">House</h1>
+        <p id="house-subtitle"></p>
+      </section>
+
+      <section style="padding-top: 0;">
+        <div class="container">
+          <div class="card" style="overflow: hidden;">
+            <div class="card-media" style="aspect-ratio: 18 / 8; position: relative;">
+              <img id="house-hero-image" src="" alt="House hero" style="width: 100%; height: 100%; object-fit: cover;" />
+              <div style="position: absolute; bottom: 16px; right: 16px; display: flex; gap: 8px;">
+                <button class="button button-light" id="hero-prev" type="button">Prev</button>
+                <button class="button button-light" id="hero-next" type="button">Next</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container split">
+          <div class="grid" style="gap: 20px;">
+            <article class="form-card">
+              <h3 style="margin-bottom: 10px;">Overview</h3>
+              <div id="house-stats" class="stats" style="margin-bottom: 12px;"></div>
+              <div id="house-overview" style="display: grid; gap: 10px;"></div>
+            </article>
+
+            <article class="form-card">
+              <h3 style="margin-bottom: 12px;">More Details</h3>
+              <div id="house-details" class="accordion"></div>
+            </article>
+
+            <article class="form-card">
+              <h3 style="margin-bottom: 12px;">Amenities</h3>
+              <div id="house-amenities" class="meta"></div>
+            </article>
+
+            <article class="form-card">
+              <h3 style="margin-bottom: 12px;">Video Tour</h3>
+              <div class="video-shell" id="house-video"></div>
+            </article>
+          </div>
+
+          <aside class="form-card" style="height: fit-content; position: sticky; top: 96px;">
+            <h3 style="margin-bottom: 8px;">Book This House</h3>
+            <p id="booking-house-label" style="margin-bottom: 10px;"></p>
+            <form id="house-booking-form" data-mock-submit>
+              <div class="form-grid">
+                <div class="field full">
+                  <label for="booking-house-select">House</label>
+                  <select id="booking-house-select"></select>
+                </div>
+                <div class="field">
+                  <label for="checkin">Check-in</label>
+                  <input id="checkin" type="date" required />
+                </div>
+                <div class="field">
+                  <label for="checkout">Check-out</label>
+                  <input id="checkout" type="date" required />
+                </div>
+                <div class="field">
+                  <label for="booking-guests">Guests</label>
+                  <input id="booking-guests" type="number" min="1" max="20" required />
+                </div>
+                <div class="field">
+                  <label for="booking-name">Name</label>
+                  <input id="booking-name" type="text" required />
+                </div>
+                <div class="field">
+                  <label for="booking-email">Email</label>
+                  <input id="booking-email" type="email" required />
+                </div>
+                <div class="field">
+                  <label for="booking-phone">Phone</label>
+                  <input id="booking-phone" type="tel" required />
+                </div>
+                <div class="field full">
+                  <label for="booking-message">Message</label>
+                  <textarea id="booking-message" placeholder="Tell us about your stay plans"></textarea>
+                </div>
+              </div>
+              <button class="button button-primary" type="submit" style="margin-top: 14px; width: 100%;">Check Availability + Book</button>
+              <p id="booking-email-hint" style="margin-top: 10px; font-size: 0.85rem;"></p>
+              <p data-form-result style="margin-top: 10px;"></p>
+            </form>
+          </aside>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <span class="badge">Photos</span>
+              <h2>Gallery</h2>
+            </div>
+            <button class="button button-outline" id="show-all-photos" type="button">See all photos</button>
+          </div>
+          <div class="gallery-grid" id="house-gallery"></div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <span class="badge">Floorplans</span>
+              <h2>Layout Examples</h2>
+            </div>
+          </div>
+          <div class="grid grid-2" id="house-floorplans"></div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container split">
+          <article class="form-card">
+            <h3 style="margin-bottom: 10px;">Things To Do</h3>
+            <div id="things-to-do" class="accordion"></div>
+
+            <h3 style="margin: 22px 0 10px;">Concierge</h3>
+            <div id="concierge-services" class="accordion"></div>
+
+            <h3 style="margin: 22px 0 8px;">General Information</h3>
+            <p id="general-information"></p>
+          </article>
+
+          <article class="form-card">
+            <h3 style="margin-bottom: 10px;">Location</h3>
+            <div class="map-shell">
+              <iframe id="house-map" src="" loading="lazy" title="House map"></iframe>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <div class="container newsletter">
+          <h3>Stay connected</h3>
+          <p>Receive availability alerts and new villa releases before public launch.</p>
+          <form data-newsletter>
+            <input type="email" placeholder="Your email" required />
+            <button class="button" type="submit">Subscribe</button>
+          </form>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <span class="badge">Social</span>
+              <h2>Instagram</h2>
+            </div>
+          </div>
+          <div class="insta-grid" data-instagram-feed></div>
+        </div>
+      </section>
+    </main>
+
+    <div id="site-footer"></div>
+
+    <div class="cookie-banner" id="cookie-banner">
+      <p>We use cookies to improve browsing, analyze traffic, and personalize content.</p>
+      <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+        <button class="button button-outline" id="cookie-reject" type="button">Decline</button>
+        <button class="button button-primary" id="cookie-accept" type="button">Accept</button>
+      </div>
+    </div>
+
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+      <button type="button">✕</button>
+      <img src="" alt="" />
+    </div>
+
+    <script src="../assets/data/site-data.js"></script>
+    <script src="../assets/js/layout.js"></script>
+    <script src="../assets/js/common.js"></script>
+    <script src="../assets/js/house-detail.js"></script>
+  </body>
+</html>
