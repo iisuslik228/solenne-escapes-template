@@ -1,6 +1,5 @@
 # Solenne Escapes Template (Simone-Scapes-like architecture)
 
-This project is a full multi-page website starter inspired by the structure and functionality in your brief.
 
 ## What is included
 
