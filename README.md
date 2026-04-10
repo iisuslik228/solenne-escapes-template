@@ -33,7 +33,7 @@
 Use a local server (recommended), for example:
 
 ```bash
-cd /Users/user_name/Desktop/main_folder
+cd /Users/user_name/path/main_folder
 python3 -m http.server 8000
 ```
 
