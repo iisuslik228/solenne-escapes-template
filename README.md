@@ -34,7 +34,7 @@ This project is a full multi-page website starter inspired by the structure and 
 Use a local server (recommended), for example:
 
 ```bash
-cd /Users/iisus.rodilsiagmail.com/Desktop/exam
+cd /Users/user_name/Desktop/main_folder
 python3 -m http.server 8000
 ```
 
@@ -49,7 +49,7 @@ Use one of these options.
 ### Option 1: Python (PowerShell or CMD)
 
 ```powershell
-cd C:\path\to\exam
+cd C:\path\to\main_folder
 python -m http.server 8000
 ```
 
